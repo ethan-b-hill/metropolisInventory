@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68792ee7bae84e5f227483937c0715b6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68792ee7bae84e5f227483937c0715b6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68792ee7bae84e5f227483937c0715b6 = L.map(
+                "map_68792ee7bae84e5f227483937c0715b6",
+                {
+                    center: [37.7930574171457, -122.40026471803202],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_adc17661fb91db07832611eedafd9bad = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_adc17661fb91db07832611eedafd9bad.addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var marker_da215384c03e59e396c916fa699ba9a0 = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_11e18bb123aef6d89ccec0deda71e081 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_da215384c03e59e396c916fa699ba9a0.setIcon(icon_11e18bb123aef6d89ccec0deda71e081);
+        
+    
+        var popup_33fcf0315e73fe49e1dad4b6763d4fb7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0a52899bf71108be44308bbd06902b27 = $(`<div id="html_0a52899bf71108be44308bbd06902b27" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_33fcf0315e73fe49e1dad4b6763d4fb7.setContent(html_0a52899bf71108be44308bbd06902b27);
+            
+        
+
+        marker_da215384c03e59e396c916fa699ba9a0.bindPopup(popup_33fcf0315e73fe49e1dad4b6763d4fb7)
+        ;
+
+        
+    
+    
+            marker_da215384c03e59e396c916fa699ba9a0.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_edb79f3f4570cfcfa175c91de0e7bd21 = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_b72d63a39a9af798a56c805f098c6840 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_edb79f3f4570cfcfa175c91de0e7bd21.setIcon(icon_b72d63a39a9af798a56c805f098c6840);
+        
+    
+        var popup_0efeb68128a8b7fd27c49fbc7198be2b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e990f0595fd6a05a779d56986db4ceee = $(`<div id="html_e990f0595fd6a05a779d56986db4ceee" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_0efeb68128a8b7fd27c49fbc7198be2b.setContent(html_e990f0595fd6a05a779d56986db4ceee);
+            
+        
+
+        marker_edb79f3f4570cfcfa175c91de0e7bd21.bindPopup(popup_0efeb68128a8b7fd27c49fbc7198be2b)
+        ;
+
+        
+    
+    
+            marker_edb79f3f4570cfcfa175c91de0e7bd21.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b03c6d303b558cda4a2f1fbc352304c6 = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_b571e1c439e6eda01ba803f5fbbf6cd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b03c6d303b558cda4a2f1fbc352304c6.setIcon(icon_b571e1c439e6eda01ba803f5fbbf6cd2);
+        
+    
+        var popup_69328ee675fe04ba43f0a0737ee16009 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bb591242c7f72fb0e5bd183b6854787b = $(`<div id="html_bb591242c7f72fb0e5bd183b6854787b" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_69328ee675fe04ba43f0a0737ee16009.setContent(html_bb591242c7f72fb0e5bd183b6854787b);
+            
+        
+
+        marker_b03c6d303b558cda4a2f1fbc352304c6.bindPopup(popup_69328ee675fe04ba43f0a0737ee16009)
+        ;
+
+        
+    
+    
+            marker_b03c6d303b558cda4a2f1fbc352304c6.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2fe68feb4d1e8829c820f3736a7d9a2 = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_be8a082da2623275d5a4e36e8d3ac515 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e2fe68feb4d1e8829c820f3736a7d9a2.setIcon(icon_be8a082da2623275d5a4e36e8d3ac515);
+        
+    
+        var popup_f4dc42bba9fb64b252e5a31dbe79d2f7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1086a4537f00a50fd8c6a9e943077afd = $(`<div id="html_1086a4537f00a50fd8c6a9e943077afd" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_f4dc42bba9fb64b252e5a31dbe79d2f7.setContent(html_1086a4537f00a50fd8c6a9e943077afd);
+            
+        
+
+        marker_e2fe68feb4d1e8829c820f3736a7d9a2.bindPopup(popup_f4dc42bba9fb64b252e5a31dbe79d2f7)
+        ;
+
+        
+    
+    
+            marker_e2fe68feb4d1e8829c820f3736a7d9a2.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d66043bc14254307f9985bf885444947 = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_7250a629a070aa31a2a9716277774941 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d66043bc14254307f9985bf885444947.setIcon(icon_7250a629a070aa31a2a9716277774941);
+        
+    
+        var popup_b063547592a3e07fdee9094d9a38223a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ddf6d724281ee67a3085e4808af46b2f = $(`<div id="html_ddf6d724281ee67a3085e4808af46b2f" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_b063547592a3e07fdee9094d9a38223a.setContent(html_ddf6d724281ee67a3085e4808af46b2f);
+            
+        
+
+        marker_d66043bc14254307f9985bf885444947.bindPopup(popup_b063547592a3e07fdee9094d9a38223a)
+        ;
+
+        
+    
+    
+            marker_d66043bc14254307f9985bf885444947.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e587b4d0c5d43b225ac3ac308f2806b0 = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_3969e37cdb0e8882084aa74b87369cc1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e587b4d0c5d43b225ac3ac308f2806b0.setIcon(icon_3969e37cdb0e8882084aa74b87369cc1);
+        
+    
+        var popup_183cf97b52e4000a03b5aa4a0c15004e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9a505d134de9afbb89e68e6acf0b7a1c = $(`<div id="html_9a505d134de9afbb89e68e6acf0b7a1c" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_183cf97b52e4000a03b5aa4a0c15004e.setContent(html_9a505d134de9afbb89e68e6acf0b7a1c);
+            
+        
+
+        marker_e587b4d0c5d43b225ac3ac308f2806b0.bindPopup(popup_183cf97b52e4000a03b5aa4a0c15004e)
+        ;
+
+        
+    
+    
+            marker_e587b4d0c5d43b225ac3ac308f2806b0.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6feb16f89ebad5339d36cac921040923 = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_d7d12444c7a0a16621eac5b870f3c40e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6feb16f89ebad5339d36cac921040923.setIcon(icon_d7d12444c7a0a16621eac5b870f3c40e);
+        
+    
+        var popup_93dcd2911382cbaf6e075af09663b041 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_84f12571bf43c91c398edd7b714943b7 = $(`<div id="html_84f12571bf43c91c398edd7b714943b7" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_93dcd2911382cbaf6e075af09663b041.setContent(html_84f12571bf43c91c398edd7b714943b7);
+            
+        
+
+        marker_6feb16f89ebad5339d36cac921040923.bindPopup(popup_93dcd2911382cbaf6e075af09663b041)
+        ;
+
+        
+    
+    
+            marker_6feb16f89ebad5339d36cac921040923.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43acfc4b16593569db5e57e8d88b2413 = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_7713803a15db8362312cb31de92daabc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_43acfc4b16593569db5e57e8d88b2413.setIcon(icon_7713803a15db8362312cb31de92daabc);
+        
+    
+        var popup_b44d4a2e574faefcd2ea1b697630958d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_eefcf6061a48aa5fcc8ab89afe4731b8 = $(`<div id="html_eefcf6061a48aa5fcc8ab89afe4731b8" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_b44d4a2e574faefcd2ea1b697630958d.setContent(html_eefcf6061a48aa5fcc8ab89afe4731b8);
+            
+        
+
+        marker_43acfc4b16593569db5e57e8d88b2413.bindPopup(popup_b44d4a2e574faefcd2ea1b697630958d)
+        ;
+
+        
+    
+    
+            marker_43acfc4b16593569db5e57e8d88b2413.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f001d91bb3d1490944293d91885b5b3 = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_22343ae950f64a60c61a3f484c8f35e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0f001d91bb3d1490944293d91885b5b3.setIcon(icon_22343ae950f64a60c61a3f484c8f35e0);
+        
+    
+        var popup_ba1b092f1a1ab870afeae4062a97b179 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_21b8e3fa33ffe037afe29bf463683b77 = $(`<div id="html_21b8e3fa33ffe037afe29bf463683b77" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_ba1b092f1a1ab870afeae4062a97b179.setContent(html_21b8e3fa33ffe037afe29bf463683b77);
+            
+        
+
+        marker_0f001d91bb3d1490944293d91885b5b3.bindPopup(popup_ba1b092f1a1ab870afeae4062a97b179)
+        ;
+
+        
+    
+    
+            marker_0f001d91bb3d1490944293d91885b5b3.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa1c3d854d6c9f19b13e5ec58867121e = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_8d81f2681edb830b3247faeacb62071d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fa1c3d854d6c9f19b13e5ec58867121e.setIcon(icon_8d81f2681edb830b3247faeacb62071d);
+        
+    
+        var popup_b2453e107fd25766284f1521025029fa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_630a60fcbf4bc4f216d13fbcc33aa50e = $(`<div id="html_630a60fcbf4bc4f216d13fbcc33aa50e" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_b2453e107fd25766284f1521025029fa.setContent(html_630a60fcbf4bc4f216d13fbcc33aa50e);
+            
+        
+
+        marker_fa1c3d854d6c9f19b13e5ec58867121e.bindPopup(popup_b2453e107fd25766284f1521025029fa)
+        ;
+
+        
+    
+    
+            marker_fa1c3d854d6c9f19b13e5ec58867121e.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7807e93c9c1192b8484680aaa2ee9aa = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_d7cf6ee5257e5a910abe1824636aced1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f7807e93c9c1192b8484680aaa2ee9aa.setIcon(icon_d7cf6ee5257e5a910abe1824636aced1);
+        
+    
+        var popup_86852fc50154ddf2254c1d57d095671e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c6b204d02b93d7f48c4c38b56732c605 = $(`<div id="html_c6b204d02b93d7f48c4c38b56732c605" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_86852fc50154ddf2254c1d57d095671e.setContent(html_c6b204d02b93d7f48c4c38b56732c605);
+            
+        
+
+        marker_f7807e93c9c1192b8484680aaa2ee9aa.bindPopup(popup_86852fc50154ddf2254c1d57d095671e)
+        ;
+
+        
+    
+    
+            marker_f7807e93c9c1192b8484680aaa2ee9aa.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f6589bfcf5007115cd888e7b2f273f8f = L.marker(
+                [37.7930574171457, -122.400264718032],
+                {}
+            ).addTo(map_68792ee7bae84e5f227483937c0715b6);
+        
+    
+            var icon_df937938a40788cc8b4aa0d89981224d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f6589bfcf5007115cd888e7b2f273f8f.setIcon(icon_df937938a40788cc8b4aa0d89981224d);
+        
+    
+        var popup_ca59c719b4756d050416c2079e2f693b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_268b580253fa24d462bcba93017a07c2 = $(`<div id="html_268b580253fa24d462bcba93017a07c2" style="width: 100.0%; height: 100.0%;">         <b>Site ID:</b> Masonic Garage<br>         <b>Address:</b> 111 California St<br>         <b>Total Ports:</b> 12<br>         <b>Total Chargers:</b> 12<br>         <b>Total AC Chargers:</b> 10<br>         <b>Total DC Chargers:</b> 2<br>                  <b>% Functionality:</b> 100.0%         </div>`)[0];
+                popup_ca59c719b4756d050416c2079e2f693b.setContent(html_268b580253fa24d462bcba93017a07c2);
+            
+        
+
+        marker_f6589bfcf5007115cd888e7b2f273f8f.bindPopup(popup_ca59c719b4756d050416c2079e2f693b)
+        ;
+
+        
+    
+    
+            marker_f6589bfcf5007115cd888e7b2f273f8f.bindTooltip(
+                `<div>
+                     Masonic Garage
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
